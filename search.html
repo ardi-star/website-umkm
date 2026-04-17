@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pencarian - Resto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-left">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+    </div>
+
+    <!-- TENGAH (LOGO) -->
+    <div class="nav-center">
+        <img src="bundaasih.png" alt="logo" class="logo-img">
+        <span class="logo-text">Resto Rs Bunda Asih</span>
+    </div>
+
+    <div class="nav-right">
+        <a href="about.html">About</a>
+    </div>
+</header>
+
+<section class="search-page">
+
+    <!-- INPUT -->
+    <input type="text" placeholder="Cari menu..." class="search-input">
+
+   <!-- ICON -->
+<div class="icon-menu">
+
+    <div class="icon-item" onclick="window.open('https://youtube.com')">
+        <i class="fab fa-youtube"></i>
+        <p>YouTube</p>
+    </div>
+
+    <div class="icon-item" onclick="window.open('https://rsbundaasih.com')">
+        <i class="fas fa-hospital"></i>
+        <p>Rumah Sakit</p>
+    </div>
+
+    <div class="icon-item" onclick="window.open('https://facebook.com')">
+        <i class="fab fa-facebook"></i>
+        <p>Facebook</p>
+    </div>
+
+</div>
+    <h3 class="brand-text">Warung Makan RS Bunda Asih</h3>
+
+</section>
+
+<!-- COOKIE -->
+<div id="cookie-box" class="cookie-box">
+    <p>
+        By using this website, you agree to our use of cookies. 
+        We use cookies to provide you with a great experience and to help our website run effectively.
+    </p>
+    <button onclick="acceptCookies()">Accept</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

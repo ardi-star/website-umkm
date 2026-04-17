@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesanan - Resto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-left">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+    </div>
+
+    <div class="nav-center">
+        <span class="logo-text">Pesanan Anda</span>
+    </div>
+
+    <div class="nav-right">
+        <a href="about.html">About</a>
+    </div>
+</header>
+
+<section class="order-page">
+
+    <h1>Detail Pesanan</h1>
+
+    <!-- LIST PESANAN -->
+    <div id="order-list" class="order-list"></div>
+
+    <!-- TOTAL -->
+    <h3>Total: Rp <span id="total">0</span></h3>
+
+    <!-- METODE -->
+    <div class="payment">
+        <label>Pilih Metode Pembayaran:</label>
+        <select id="metode" onchange="pilihMetode()">
+            <option value="transfer">Transfer Bank</option>
+            <option value="cod">COD</option>
+            <option value="ewallet">E-Wallet</option>
+            <option value="qr">QRIS</option>
+        </select>
+    </div>
+
+    <!-- QR -->
+    <div id="qr-container" class="qr hidden">
+        <p>Scan QR untuk pembayaran</p>
+        <img src="QR-BAYAR.jpeg" alt="QR Code">
+    </div>
+
+    <div id="konfirmasi-bayar" class="hidden">
+    <button onclick="konfirmasiBayar()" class="btn-confirm">
+        Saya Sudah Bayar
+    </button>
+</div>
+
+    <!-- BUTTON -->
+    <button onclick="checkout()" class="btn-checkout">Bayar Sekarang</button>
+
+    <!-- STATUS -->
+    <div id="status" class="status hidden"></div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

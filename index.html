@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Resto Rs Bunda Asih</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <!-- SEARCH OVERLAY -->
+<div id="search-box" class="search-box hidden">
+    <input type="text" placeholder="Cari menu..." id="search-input">
+    <button onclick="closeSearch()">✕</button>
+</div>
+    
+    <!-- KIRI -->
+    <div class="nav-left">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+    </div>
+
+    <!-- TENGAH (LOGO) -->
+    <div class="nav-center">
+        <img src="bundaasih.png" alt="logo" class="logo-img">
+        <span class="logo-text">Resto Rs Bunda Asih</span>
+    </div>
+
+    <!-- KANAN -->
+    <div class="nav-right">
+        <a href="about.html">About</a>
+        <a href="pesanan.html">
+    Pesanan <span id="cart-count" class="badge">0</span>
+</a>
+<a href="search.html">Pencarian</a>
+        <a href="#">Karier</a>
+        <!-- ICON SEARCH -->
+    <div class="fas fa-search search-icon" onclick="toggleSearch()"></div>
+</div>
+    </div>
+
+</header>
+
+<!-- HERO -->
+<section class="hero-slider">
+
+    <div class="slides">
+        <img src="price-list.jpg" class="slide active">
+        <img src="MieGoreng.webp" class="slide">
+        <img src="NasiGoreng.avif" class="slide">
+    </div>
+
+    <div class="overlay">
+        <h1>Resto RS Bunda Asih</h1>
+        <p>Nikmati hidangan terbaik dengan cita rasa khas</p>
+    </div>
+
+</section>
+
+<!-- OUR SPECIALTY -->
+<section class="specialty">
+    <h2 class="title">Our Specialty</h2>
+    <div class="brush"></div>
+
+    <div class="specialty-grid">
+        <div class="card-special float-item">
+            <img src="NasiGoreng.avif">
+            <h3>Nasi Goreng</h3>
+        </div>
+
+        <div class="card-special float-item">
+            <img src="MieGoreng.webp">
+            <h3>Mie Goreng</h3>
+        </div>
+
+        <div class="card-special float-item">
+            <img src="redvalvet.jpg">
+            <h3>Red Velvet Drink</h3>
+        </div>
+    </div>
+</section>
+
+<!-- MORE ABOUT US -->
+<section class="about-more">
+    <h2 class="title">More About Us</h2>
+
+    <div class="image-reveal">
+        <div class="mask top-mask"></div>
+
+        <img src="allmenu.webp" alt="about">
+
+        <div class="mask bottom-mask"></div>
+    </div>
+</section>
+
+<!-- CONTENT SCROLL -->
+<section class="content">
+
+    <div class="row">
+        <div class="text fade-left">
+            <h2>Nasi Goreng Spesial</h2>
+            <p>Makanan khas dengan cita rasa rempah pilihan yang menggugah selera.</p>
+        </div>
+        <div class="image fade-right">
+            <img src="NasiGoreng.avif">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="text fade-left">
+            <h2>Mie Ayam Lezat</h2>
+            <p>Dihidangkan dengan ayam pilihan dan kuah kaldu yang kaya rasa.</p>
+        </div>
+        <div class="image fade-right">
+            <img src="MieGoreng.webp">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="text fade-left">
+            <h2>Minuman Segar</h2>
+            <p>Berbagai pilihan minuman segar untuk menemani santapan Anda.</p>
+        </div>
+        <div class="image fade-right">
+            <img src="redvalvet.jpg">
+        </div>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

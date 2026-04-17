@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu - Resto Rs Bunda Asih</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-left">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+    </div>
+
+    <div class="nav-center">
+        <img src="bundaasih.png" class="logo-img">
+        <span class="logo-text">Resto Rs Bunda Asih</span>
+    </div>
+
+    <div class="nav-right">
+        <a href="#">About</a>
+        <a href="pesanan.html">Pesanan</a>
+        <a href="#">Karier</a>
+    </div>
+</header>
+
+<section class="menu-page">
+    <h1>Menu Hidangan Kami</h1>
+
+    <!-- FILTER -->
+    <div class="menu-filter">
+        <button onclick="filterMenu('all')">Semua</button>
+        <button onclick="filterMenu('food')">Food</button>
+        <button onclick="filterMenu('drink')">Drink</button>
+        <button onclick="filterMenu('snack')">Snack</button>
+    </div>
+
+    <!-- MENU GRID -->
+    <div class="menu-grid">
+
+        <!-- FOOD (10) -->
+        <div class="menu-item food">
+    <div class="menu-img">
+        <img src="NasiGoreng.avif">
+    </div>
+    <div class="menu-info">
+        <h3>Nasi Goreng</h3>
+        <p class="desc">Nasi goreng spesial dengan bumbu rempah khas.</p>
+        <span class="price">Rp 20.000</span>
+        <button onclick="tambahPesanan('Nasi Goreng',20000, 'NasiGoreng.avif')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item food">
+    <div class="menu-img">
+        <img src="MieGoreng.webp">
+    </div>
+    <div class="menu-info">
+        <h3>Mie Goreng</h3>
+        <p class="desc">Mie goreng lezat dengan bumbu rempah khas.</p>
+        <span class="price">Rp 15.000</span>
+        <button onclick="tambahPesanan('Mie Goreng',15000, 'MieGoreng.webp')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item food">
+    <div class="menu-img">
+        <img src="ayam-goreng-lengkuas.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Ayam Goreng</h3>
+        <p class="desc">Ayam goreng renyah dengan bumbu spesial.</p>
+        <span class="price">Rp 25.000</span>
+        <button onclick="tambahPesanan('Ayam Goreng',25000, 'ayam-goreng-lengkuas.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item food">
+    <div class="menu-img">
+        <img src="ayam-bakar.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Ayam Bakar</h3>
+        <p class="desc">Ayam bakar manis dengan saus khas.</p>
+        <span class="price">Rp 28.000</span>
+        <button onclick="tambahPesanan('Ayam Bakar',28000, 'ayam-bakar.jpg')">
+            + Tambah
+        </button>
+
+    </div>
+</div>
+        <div class="menu-item food">
+    <div class="menu-img">
+        <img src="sate-ayam.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Sate Ayam</h3>
+        <p class="desc">Sate ayam lezat dengan bumbu kacang.</p>
+        <span class="price">Rp 22.000</span>
+        <button onclick="tambahPesanan('Sate Ayam',22000, 'sate-ayam.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item food">
+    <div class="menu-img">
+        <img src="soto-ayam.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Soto Ayam</h3>
+        <p class="desc">Soto ayam hangat dengan kuah sedap.</p>
+        <span class="price">Rp 18.000</span>
+        <button onclick="tambahPesanan('Soto Ayam',18000, 'soto-ayam.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item food">
+    <div class="menu-img">
+        <img src="NasiGoreng.avif">
+    </div>
+    <div class="menu-info">
+        <h3>Nasi Goreng</h3>
+        <p class="desc">Nasi goreng spesial dengan bumbu rempah khas.</p>
+        <span class="price">Rp 20.000</span>
+        <button onclick="tambahPesanan('Nasi Goreng',20000, 'NasiGoreng.avif')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item food">
+    <div class="menu-img">
+        <img src="rendang.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Rendang</h3>
+        <p class="desc">Rendang lezat dengan bumbu rempah khas.</p>
+        <span class="price">Rp 30.000</span>
+        <button onclick="tambahPesanan('Rendang',30000, 'rendang.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item food">
+    <div class="menu-img">
+        <img src="gado-gado-lsbaguxy4BVZ2.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Gado-Gado</h3>
+        <p class="desc">Gado-gado segar dengan sambal khas.</p>
+        <span class="price">Rp 15.000</span>
+        <button onclick="tambahPesanan('Gado-Gado',15000, 'gado-gado-lsbaguxy4BVZ2.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item food">
+    <div class="menu-img">
+        <img src="nasiuduk.avif">
+    </div>
+    <div class="menu-info">
+        <h3>Nasi Uduk</h3>
+        <p class="desc">Nasi uduk lezat dengan kuah gurih.</p>
+        <span class="price">Rp 12.000</span>
+        <button onclick="tambahPesanan('Nasi Uduk',12000, 'nasiuduk.avif')">
+            + Tambah
+        </button>
+    </div>
+</div>
+
+        <!-- DRINK (10) -->
+        <div class="menu-item drink">
+    <div class="menu-img">
+        <img src="redvalvet.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Red Velvet</h3>
+        <p class="desc">Kue red velvet lezat dengan krim khas.</p>
+        <span class="price">Rp 25.000</span>
+        <button onclick="tambahPesanan('Red Velvet',25000, 'redvalvet.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item drink">
+    <div class="menu-img">
+        <img src="es-teh.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Es Teh</h3>
+        <p class="desc">Es teh manis segar.</p>
+        <span class="price">Rp 5.000</span>
+        <button onclick="tambahPesanan('Es Teh',5000, 'es-teh.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item drink">
+    <div class="menu-img">
+        <img src="cafe-latte1-recipe_resized.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Latte</h3>
+        <p class="desc">Kopi latte lezat dengan susu.</p>
+        <span class="price">Rp 15.000</span>
+        <button onclick="tambahPesanan('Latte',15000, 'cafe-latte1-recipe_resized.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item drink">
+    <div class="menu-img">
+        <img src="jusalpukat.webp">
+    </div>
+    <div class="menu-info">
+        <h3>Jus Alpukat</h3>
+        <p class="desc">Jus alpukat segar.</p>
+        <span class="price">Rp 12.000</span>
+        <button onclick="tambahPesanan('Jus Alpukat',12000, 'jusalpukat.webp')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item drink">
+    <div class="menu-img">
+        <img src="jusmangga.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Jus Mangga</h3>
+        <p class="desc">Jus mangga segar.</p>
+        <span class="price">Rp 12.000</span>
+        <button onclick="tambahPesanan('Jus Mangga',12000, 'jusmangga.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item drink">
+    <div class="menu-img">
+        <img src="Milkshake-Recipe-Card.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Milkshake</h3>
+        <p class="desc">Milkshake lezat dengan berbagai rasa.</p>
+        <span class="price">Rp 15.000</span>
+        <button onclick="tambahPesanan('Milkshake',15000, 'Milkshake-Recipe-Card.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item drink">
+    <div class="menu-img">
+        <img src="air-mineral.avif">
+    </div>
+    <div class="menu-info">
+        <h3>Air Mineral</h3>
+        <p class="desc">Air mineral segar.</p>
+        <span class="price">Rp 5.000</span>
+        <button onclick="tambahPesanan('Air Mineral',5000, 'air-mineral.avif')">
+            + Tambah
+        </button>
+    </div>
+</div>
+
+        <!-- SNACK (10) -->
+        <div class="menu-item snack">
+    <div class="menu-img">
+        <img src="kentang-goreng.webp">
+    </div>
+    <div class="menu-info">
+        <h3>French Fries</h3>
+        <p class="desc">French fries renyah dengan saus khas.</p>
+        <span class="price">Rp 15.000</span>
+        <button onclick="tambahPesanan('French Fries',15000, 'kentang-goreng.webp')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item snack">
+    <div class="menu-img">
+        <img src="risol-1765844931764_169.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Risoles</h3>
+        <p class="desc">Risoles lezat dengan isian daging.</p>
+        <span class="price">Rp 10.000</span>
+        <button onclick="tambahPesanan('Risoles',10000, 'risol-1765844931764_169.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item snack">
+    <div class="menu-img">
+        <img src="doughnuts-donuts.webp">
+    </div>
+    <div class="menu-info">
+        <h3>Donat</h3>
+        <p class="desc">Donat lembut dengan topping manis.</p>
+        <span class="price">Rp 8.000</span>
+        <button onclick="tambahPesanan('Donat',8000, 'doughnuts-donuts.webp')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item snack">
+    <div class="menu-img">
+        <img src="martabakmini.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Martabak Mini</h3>
+        <p class="desc">Martabak mini lezat dengan isian khas.</p>
+        <span class="price">Rp 12.000</span>
+        <button onclick="tambahPesanan('Martabak Mini',12000, 'martabakmini.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item snack">
+    <div class="menu-img">
+        <img src="roti-bakar.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Roti Bakar</h3>
+        <p class="desc">Roti bakar lezat dengan isian selai.</p>
+        <span class="price">Rp 10.000</span>
+        <button onclick="tambahPesanan('Roti Bakar',10000, 'roti-bakar.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item snack">
+    <div class="menu-img">
+        <img src="keripik.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Keripik</h3>
+        <p class="desc">Keripik renyah dengan rasa asin.</p>
+        <span class="price">Rp 5.000</span>
+        <button onclick="tambahPesanan('Keripik',5000, 'keripik.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item snack">
+    <div class="menu-img">
+        <img src="pisang-goreng.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Pisang Goreng</h3>
+        <p class="desc">Pisang goreng renyah dengan taburan gula.</p>
+        <span class="price">Rp 8.000</span>
+        <button onclick="tambahPesanan('Pisang Goreng',8000, 'pisang-goreng.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+        <div class="menu-item snack">
+    <div class="menu-img">
+        <img src="tahu-crispy.jpg">
+    </div>
+    <div class="menu-info">
+        <h3>Tahu Crispy</h3>
+        <p class="desc">Tahu crispy renyah dengan saus khas.</p>
+        <span class= "price">Rp 10.000</span>
+        <button onclick="tambahPesanan('Tahu Crispy',10000, 'tahu-crispy.jpg')">
+            + Tambah
+        </button>
+    </div>
+</div>
+
+<div class="checkout-area">
+    <button onclick="kePesanan()">Selesaikan Pesanan</button>
+</div>
+
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
